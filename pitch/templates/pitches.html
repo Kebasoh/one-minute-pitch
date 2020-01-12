@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+
+{% block header %}
+	<h1>{% block title %}One Minute Pitch - User Profile{% endblock %}</h1>
+{% endblock %}
+
+
+<!-- Content block -->
+{% block content %}
+
+<div class="form-group mb15 mt20 post-pitch">
+    <textarea class="form-control" rows="5" spellcheck="false" placeholder="Post a Pitch ..." rows="1"></textarea>
+    <button class="btn btn-primary btn-block btn-sm btn-no-radius ">Post Pitch</button>
+</div>
+
+<div class="container pitches-page">
+	<div class="row pitches">
+	    <div id="wrapper" class="home">
+		    <div class="archive">
+
+				<ul class="nav nav-tabs categories">
+					<li class="active"><a href="#technologies" data-toggle="tab">Technologies<span class="badge">3</span></a></li>
+					<li><a href="#business" data-toggle="tab">Business<span class="badge">0</span></a></li>
+					<li><a href="#project" data-toggle="tab">Project<span class="badge">4</span></a></li>
+					<li><a href="#product" data-toggle="tab">Product<span class="badge">5</span></a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content mt30 mb30">
+					<div class="tab-pane active" id="technologies">
+						<ul id="post-list">
+                
+			                <li>
+			                    <a href="">
+			                        <aside class="dates">Nov 25</aside>
+			                    </a>
+			                    <p class="mb0">Posted by</p>
+			                    <a href="">
+			                        Brightfunnel
+			                    </a>
+			                    <h2 class="headline">
+			                        Voters today are embracing presidential candidates who appeal to their specific passions and ideals much like they only trust news sources that align with their ideological views.
+
+									Our ability to self-select our newsfeed via Facebook, Twitter and even whether our main source of news is Nation Media or Citizen is creating an echo chamber for voters. 
+			                    </h2>
+			                    <small class="votes">
+			                    	<i class="fa fa-thumbs-up"></i>&nbsp;&nbsp; 34
+			                    	&nbsp;&nbsp;&nbsp;&nbsp;
+			                    	<i class="fa fa-thumbs-down"></i>&nbsp;&nbsp; 4
+			                    </small>
+			                </li>
+
+			                <li>
+			                    <a href="">
+			                        <aside class="dates">Aug 8</aside>
+			                    </a>
+			                    <a href="">
+			                        abrahamJ
+			                    </a>
+			                    <h2 class="headline">
+			                        I’d like to write a piece explaining how climate change could completely wreck winemaking as we know it, and even render certain varietals and blends impossible to create should temperatures rise too far. I would briefly explain how varietal characteristics depend on terroir — which, in turn, is defined in part by climate — before imagining how certain varietals’ expressions might change should temperatures reliably increase by even just a few degrees.
+			                    </h2>
+			                    <small class="votes">
+			                    	<i class="fa fa-thumbs-up"></i>&nbsp;&nbsp; 40
+			                    	&nbsp;&nbsp;&nbsp;&nbsp;
+			                    	<i class="fa fa-thumbs-down"></i>&nbsp;&nbsp; 7
+			                    </small>
+			                </li>
+
+			                <li>
+			                    <a href="">
+			                        <aside class="dates">Sept 11</aside>
+			                    </a>
+			                    <a href="">
+			                        @maureen254
+			                    </a>
+			                    <h2 class="headline">
+			                        A few years ago, statement necklaces became a professional crutch for me. When I made the switch from journalism to PR, I felt like the shlubby and out-of-place little sister who walked in on a party of much cooler, older, prettier high school girls. I moved from my job at a local newspaper in Iowa to a PR job in a bigger city, and overnight I became hyper-aware of my dress pants that were too uptight and my Target basics that were too, well, basic. Every woman working at an agency in town seemed to own the same variation of that chunky J. Crew statement necklace, so I went out and bought one of my own (a much cheaper version at Charming Charlie’s, but it was the gateway necklace). Years later, I’m still working in PR, but I’ve settled into my own style and I don’t feel the need to cling to costume jewelry to fit in. And now I’ve got all these damn statement necklaces that aren’t my style at all.
+			                    </h2>
+			                    <small class="votes">
+			                    	<i class="fa fa-thumbs-up"></i>&nbsp;&nbsp; 11
+			                    	&nbsp;&nbsp;&nbsp;&nbsp;
+			                    	<i class="fa fa-thumbs-down"></i>&nbsp;&nbsp; 2
+			                    </small>
+			                </li>
+
+
+			                
+			            </ul>
+					</div>
+					<div class="tab-pane" id="business">
+					</div>
+					<div class="tab-pane" id="project">
+					</div>
+					<div class="tab-pane" id="product">
+					</div>
+				</div>
+	        </div>
+    	</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<footer class="registerUser" id="footer">
+    <p class="small">
+         Powered by
+        <a href="http://adzumi.co.ke/" target="_blank">Adzumi</a> © Copyright 2019. One Minute Pitch Application.
+    </p>
+</footer>
+
+{% endblock%}
