@@ -1,41 +1,46 @@
-{% extends 'base.html'%}
-{% import 'macros.html' as macro%}
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+<!-- Styles block -->
 
-<!-- Styles block --> 
-{% block styles %}
-    {{ super () }}
+{%block styles%}
+    {{ super() }}
+    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-    {% endblock%}
+{%endblock%}
+<!-- Content block -->
+{%block content%}
+<div class="jumbotron text-center" style="background-color: #E63462; color: #fff; padding: 55px 25px; font-family: 'Monoton', cursive;">
+    <h1>One Minute Pitch</h1>
+</div>
+<div class="container" style="padding-bottom: 20px;">
+    <a href="{{url_for('main.new_pitch')}}" class="btn btn-success">Create pitch</a>
+</div>
 
-        {% block content %}
-        <div class="jumbotron mdb-color special-color-dark text-center text-white">
-                <h2 class="h2">WELCOME TO MOVIE BASE</h2>
+<div class="container" style= "font-family: 'Cormorant Upright', serif;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Interview Pitches</h3>
+                <p>Want to ace an interview in just a few words, welcome.</p>
+                <a href="{{url_for('main.interview_pitches')}}" class="btn btn-primary -center">View</a>
             </div>
-      
-    <div class="container-fluid" >
-        <!-- Popular movie -->
-        <div  id="popular" class="mt-4 pt-4"> 
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Product Pitches</h3>
+                <p>Want to talk about your products, you're in the right place.</p>
+                <a href="{{url_for('main.product_pitches')}}" class="btn btn-primary -center">View</a>
             </div>
-        <h2 class="mdb-color special-color-dark h2 text-white mt-4 mb-4 text-center pb-4 pt-4"> Popular Movies</h2> 
-
-        <ul>
-            {{ macro.displayMovieList(popular)}}
-        </ul>
-        <!-- Upcoming movie  -->
-        <div id="upcoming" class="mt-4 pt-4" > </div>
-            <h2 class="mdb-color special-color-dark h2 text-white mt-4 mb-4 text-center pb-4 pt-4"> Upcoming Movies </h2>
-        
-        <ul>
-            {{ macro.displayMovieList(upcoming)}}
-        </ul>
-        <!-- Now showing movie -->
-        <div id="nowshowing" class="mt-4 pt-4">
+        </div>
+        <div class="col-md-4">
+            <div class="well well-lg">
+                <h3>Promotion Pitches</h3>
+                <p>Want to promote anything, step right up and begin.</p>
+                <a href="{{url_for('main.promotion_pitches')}}" class="btn btn-primary -center">View</a>
             </div>
-        <h2 class="mdb-color special-color-dark h2 text-white mt-4 mb-4 text-center pb-4 pt-4">Now Showing</h2>
-
-        <ul>
-            {{ macro.displayMovieList(now_showing)}}
-        </ul>
+        </div>
     </div>
-        {% endblock%}
-    
+</div>
+{%endblock%}
