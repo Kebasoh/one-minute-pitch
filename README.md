@@ -13,4 +13,15 @@
 
 ## BDD
 
+## TECHNOLOGY USED
+
+- You Require to install
+
+* Python3.6
+
+* Flask
+
+* Pip
+* Virtual environment
+
 ## PROJECT GITHUB LIVE LINK
