@@ -30,6 +30,13 @@
 * Flask
 
 * Pip
+
 * Virtual environment
 
 ## PROJECT GITHUB LIVE LINK
+
+
+## Contacts info
+
+* Email:ongatikebaso@gamil.com
+* Github: kebasoh
