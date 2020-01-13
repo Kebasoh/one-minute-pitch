@@ -40,3 +40,8 @@
 
 * Email:ongatikebaso@gamil.com
 * Github: kebasoh
+
+## LICENSE
+
+- This software license under MIT License
+- Copyright (c) KEBASO STEVE ONGATI 2020
