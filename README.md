@@ -39,7 +39,7 @@
 
 ## PROJECT GITHUB LIVE LINK
 
-- https://stevepitch.herokuapp.com/
+- https://steve-pitch.herokuapp.com/
 
 ## Contacts info
 
