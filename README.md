@@ -21,7 +21,7 @@
 
 ## BDD
 
-  <img src="images/app.png">
+  
   
 - In our pitch you can create an account and then sign up.You can also post pitches that you want whether its the product,interview or the     promotion part.
 
